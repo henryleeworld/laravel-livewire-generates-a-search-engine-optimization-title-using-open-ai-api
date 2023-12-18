@@ -34,5 +34,5 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/m0Tly1R.gif)
+![](https://i.imgur.com/4U7a6Tp.gif)
 > 提供更加精準且有深度的內容建議

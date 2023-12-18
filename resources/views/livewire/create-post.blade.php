@@ -12,7 +12,7 @@
                     <form wire:submit="save">
                         <div>
                             <x-input-label for="title" :value="__('Title')" />
-                            <x-text-input wire:model="title" id="title" class="mt-1 block w-full" required />
+                            <x-text-input wire:model.live.debounce.250ms="title" type="text" id="title" class="mt-1 block w-full" required />
                             <x-input-error :messages="$errors->get('title')" class="mt-2" />
 
                             <x-secondary-button wire:click="suggestTitles" class="mt-1">
@@ -22,7 +22,7 @@
                             @if($suggestedTitles)
                                 <div class="mt-2">
                                     @foreach($suggestedTitles as $key => $suggestedTitle)
-                                    <div class="hover:underline hover:cursor-pointer" wire:click="useTitle({{ $key }})">{{ $suggestedTitle }}</div>
+                                    <div class="hover:underline hover:cursor-pointer" wire:click="useTitle({{ $key }});setInterval(() => {document.getElementById('title').value = $wire.title;}, 1000)">{{ $suggestedTitle }}</div>
                                     @endforeach
                                 </div>
                             @endif
