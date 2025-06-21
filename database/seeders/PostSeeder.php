@@ -9,22 +9,22 @@ use Illuminate\Database\Seeder;
 class PostSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      */
     public function run(): void
     {
         $posts = [
             [
-                'title'   => '《ROCKMAN X DiVE 離線版》推出免費體驗 Demo 版及限時優惠，可體驗本篇第 8 章',
-                'content' => 'CAPCOM 旗下動作 RPG《ROCKMAN X DiVE 離線版》今年 9 月於 Steam（PC）及 iOS、Android 平台上線，該作品為《ROCKMAN X DiVE》以離線版形式重新推出的作品。其中保留了「X DiVE」獨特的豐富遊戲性，收錄 100 名以上可遊玩角色、900 種以上關卡的龐大遊戲內容。',
+                'title'   => __('Marugame Castle offers overnight stay for 2 people for 1.2 million yen'),
+                'content' => __('One of 12 castles with a main keep constructed in or before the Edo Period (1603-1867), Marugame Castle is looking for a new feudal lord.'),
             ],
             [
-                'title'   => '「SHAMAN KING 展 通靈王 POP UP STORE」明日起高雄登場，武井宏之親筆撰寫中文問候',
-                'content' => '首度移師來台展出的 SHAMAN KING 展 通靈王 POP UP STORE 將於明（16）日起在夢時代購物中心 6 樓時代會館免費開展。特展忠實呈現日本部分展區場景：全角色集結及華麗必殺技、特展限定作畫影片、幾近百幅細膩複製原畫、日本特展限定與台灣首發限定精品等。',
+                'title'   => __('Chile holds seismic drills as chance of a big quake rises'),
+                'content' => __('As the northern Chilean city of Copiapo was preparing last week to hold earthquake drills, it was hit by a real-life one: a 6.4-magnitude quake that cut power to thousands and caused structural damage to buildings.'),
             ],
             [
-                'title'   => '「THE 哆啦A夢展 台北 2023」明日盛大開展，集結多名日本藝術家重新定義哆啦A夢',
-                'content' => '集結了村上隆、奈良美智、蜷川實花等 28 組日本知名藝術家，以「我心中的哆啦A夢」為主題的「THE 哆啦A夢展 台北 2023」，即將於明日正式開展，而主辦單位聯合數位文創也在今日搶先舉行開幕記者會，帶領媒體一探展覽面貌。此外，參展藝術家之一的梅佳代，今日也受邀參與活動記者會，並在自己的展區留下值得紀念的簽名與圖繪。',
+                'title'   => __('Dutch museum rolls out 200-year-old condom'),
+                'content' => __('The Rijksmuseum in Amsterdam on Tuesday placed on display a rare condom from around 1830, featuring an erotic print of a nun and three clergymen in provocative poses.'),
             ],
         ];
 
